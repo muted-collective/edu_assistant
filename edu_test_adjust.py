@@ -406,7 +406,7 @@ def submit_fine_tune(thread_id, messages, thread_name):
 # Streamlit Application
 st.set_page_config(page_title="Academic Assistant", page_icon=":robot_face:")
 st.title("Academic Assistant")
-st.write("Interact with the academic assistant for your business needs")
+st.write("Interact with the academic assistant for your needs")
 
 
 # Initialize session state variables if they don't exist
