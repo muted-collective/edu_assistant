@@ -298,24 +298,6 @@ def upload_openai(file_path, file_name):
         os.remove(file_path)
 
 
-list_tools= [{
-            "type": "function",
-            "function": {
-                "name": "download_file",
-                "description": "Assist users with exporting documents for copying they have drafted for their legal firm. The types of documents you will be exporting are contracts, agreements, letters and othe rlegal documents. You are to get the file data as inputs for this function",
-                "parameters": {
-                    "type": "object",
-                    "properties": {
-                        "file_data":{"type": "string", "description": "Obtain the file data to be exported to be copied by users. Be sure to get the entire text no matter what the size of the information provided. This represents the data to be copied by users. Please be sure to incude the applicable formatting as per the draft."},
-                        },
-                        "required": ["file_data"],
-                    }
-                }
-            },
-            {"type": "file_search"}
-        ]
-
-
 class EventHandler(AssistantEventHandler):
     @override
     def on_event(self, event):
@@ -422,9 +404,9 @@ def submit_fine_tune(thread_id, messages, thread_name):
 
 
 # Streamlit Application
-st.set_page_config(page_title="Legal Assistant", page_icon=":robot_face:")
-st.title("Legal Assistant")
-st.write("Interact with the legal assistant for your business needs")
+st.set_page_config(page_title="Academic Assistant", page_icon=":robot_face:")
+st.title("Academic Assistant")
+st.write("Interact with the academic assistant for your business needs")
 
 
 # Initialize session state variables if they don't exist
