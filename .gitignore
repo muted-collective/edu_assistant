@@ -1,9 +1,6 @@
 .env
 thread_id.txt
 keys.py
-email_outlook.py
-test_legal.py
-legal.py
-DEMO_legal.py
-binda-attorneys-firebase-adminsdk-jpfe8-115f4904bf.json
-DEMO_Binda_Attorneys_with comments.py
+ai_agent.py
+not_hosted_edu_test_adjust.py
+edu-assistant_firebase.json
